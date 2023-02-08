@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+	.glide {
+		&__arrow--left {
+			left: 44px
+		}
+		&__arrow--right {
+			right: 44px
+		}
+	}
+
+	.description {
+		padding-left: 44px;
+		&__subtitle p {
+			font-size: 14px;
+		}
+		&__title p {
+			right: 4px;
+			font-size: 60px;
+			line-height: 1;
+			margin-bottom: 32px;
+		}
+		&__text {
+			width: 260px;
+			font-size: 10px;
+			line-height: 15px;
+			margin-bottom: 20px;
+		}
+		&__link a {
+			font-size: 12px;
+			line-height: $default-line-height;
+		}
+		&__link a::before {
+			width: 8px;
+			height: 8px;
+		}
+		&__link a::after {
+			content: '';
+			width: 0%;
+			height: 1px;
+			background-color: $white;
+			position: absolute;
+			bottom: -2px;
+			left: 18px;
+			transition: .3s;
+		}
+		&__link a:hover::after {
+			width: 80%;
+		}
+	}
+}

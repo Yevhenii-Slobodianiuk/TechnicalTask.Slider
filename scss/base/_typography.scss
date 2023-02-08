@@ -1,0 +1,61 @@
+.description {
+	&__subtitle p {
+		font-family: $font-roboto;
+		font-weight: 700;
+		font-size: 28px;
+		@include title-default-preference;
+		width: 420px;
+		margin-bottom: 2px;
+	}
+	&__title p {
+		position: relative;
+		right: 8px;
+		font-family: $font-viga;
+		font-weight: 400;
+		font-size: 120px;
+		@include title-default-preference;
+		margin-bottom: 65px;
+	}
+	&__text {
+		width: 515px;
+		font-family: $font-roboto;
+		font-size: 20px;
+		line-height: 30px;
+		color: rgba(255, 255, 255, 0.7);
+		margin-bottom: 39px;
+	}
+	&__link a {
+		font-family: $font-roboto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: $default-line-height;
+		color: $white;
+		position: relative;
+		padding-left: 18px;
+		&::before {
+			content: '';
+			width: 10px;
+			height: 10px;
+			border: 1px solid $white;
+			border-radius: 50%;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		&::after {
+			content: '';
+			width: 0%;
+			height: 1px;
+			background-color: $white;
+			position: absolute;
+			bottom: -2px;
+			left: 18px;
+			transition: $default-transition;
+		}
+		&:hover::after {
+			width: 80%;
+		}
+	}
+}

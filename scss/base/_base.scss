@@ -1,0 +1,19 @@
+.glide {
+	height: 100vh;
+	&__slide img {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&__slide {
+		height: 100vh;
+		background-size: auto;
+	}
+}
+
+.description {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left: 88px;
+}

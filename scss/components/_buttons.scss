@@ -1,0 +1,21 @@
+.glide {
+	&__arrow {
+		top: 93%;
+		padding: 0;
+		border: none;
+		box-shadow: none;
+	}
+	&__arrow svg {
+		fill-opacity: 0.5;
+		transition: $default-transition;
+		&:hover {
+			fill-opacity: 1;
+		}
+	}
+	&__arrow--left {
+		left: 88px
+	}
+	&__arrow--right {
+		right: 88px
+	}
+}
